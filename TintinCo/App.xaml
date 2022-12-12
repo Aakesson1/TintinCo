@@ -1,0 +1,9 @@
+﻿<Application x:Class="TintinCo_.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TintinCo_"
+             StartupUri="Views\MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
