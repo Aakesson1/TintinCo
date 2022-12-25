@@ -20,28 +20,25 @@ namespace TintinCo_.ViewModels
                 ComicRepository = new ComicRepository();
                 Comics = new ObservableCollection<Comic>(ComicRepository.comicRepository);
             }
-        public List<Comic> searchRepoReleaseYear(string MinHdIndex, string MaxHdIndex)
+        public List<Comic> searchRepoReleaseYear(string MinReleaseYear, string MaxReleaseYear)
         {
 
             List<Comic> Comicslist =
-                (from tempDog in Comics
-                 where tempDog.ReleaseYear.CompareTo(int.Parse(MinHdIndex)) >= 0 && tempDog.ReleaseYear.CompareTo(int.Parse(MaxHdIndex)) <= 0
-                 select tempDog).ToList();
+                (from tempComic in Comics
+                 where tempComic.ReleaseYear.CompareTo(int.Parse(MinReleaseYear)) >= 0 && tempComic.ReleaseYear.CompareTo(int.Parse(MaxReleaseYear)) <= 0
+                 select tempComic).ToList();
             return Comicslist;
         }
         public void AddComicToRepo(Comic comic)
         {
             Comics.Add(comic);
         }
-
-        private void Dogs_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        public void UpdateComicInRepo(Comic comic)
         {
-            if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
-            {
-                int newIndex = e.NewStartingIndex;
-                ComicRepository.AddComic(Comics[newIndex]);
-            }
+            Comics.Add(comic);
+        
         }
+ 
 
     }
 

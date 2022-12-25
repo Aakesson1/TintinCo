@@ -35,3 +35,5 @@ C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\A
 C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\HomePage.baml
 C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\SearchReleaseYear.baml
 C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\SearchSpecificComic.baml
+C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\EditPage.g.cs
+C:\Users\Mike\Desktop\Opgaver\TintinCo\TintinCo\obj\Debug\net5.0-windows\Views\EditPage.baml

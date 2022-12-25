@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TintinCo_.Model;
 using TintinCo_.ViewModels;
 
 namespace TintinCo_.Views
@@ -47,6 +48,12 @@ namespace TintinCo_.Views
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(new AddComic(this.Frame, this.ComicVM));
+        }
+
+        private void editbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Comic tempComic = (Comic)gridTable.SelectedItem;
+            Frame.Navigate(new EditPage(Frame, ComicVM, tempComic));
         }
     }
 }
