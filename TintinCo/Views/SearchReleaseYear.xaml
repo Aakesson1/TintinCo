@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TintinCo_.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="SearchReleaseYear">
 
     <Grid>
@@ -16,7 +16,8 @@
         <Button x:Name="backbtn" Content="back" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Click="backbtn_Click_1"/>
         <Label Content="Min:" HorizontalAlignment="Left" Margin="62,31,0,0" VerticalAlignment="Top"/>
         <Label Content="Max:" HorizontalAlignment="Left" Margin="61,76,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="AddBtn" Content="Add Comic" HorizontalAlignment="Left" Margin="34,402,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="AddBtn_Click"/>
+        <Button x:Name="AddBtn" Content="Add Comic" HorizontalAlignment="Left" Margin="34,402,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="AddBtn_Click" Height="20" Width="70"/>
+        <Button x:Name="editbtn" Content="Edit Comic" HorizontalAlignment="Left" Margin="192,402,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="20" Width="70" Click="editbtn_Click"/>
 
     </Grid>
 </Page>

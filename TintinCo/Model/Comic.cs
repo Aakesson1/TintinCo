@@ -16,5 +16,6 @@ namespace TintinCo_.Model
         public string QualityColor { get; set; }
         public int Price { get; set; }
         public string Description { get; set; }
+        public int TitleID { get; set; }
     }
 }
